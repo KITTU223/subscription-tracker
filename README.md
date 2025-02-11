@@ -36,3 +36,4 @@ The application uses environment variables for configuration. The variables are:
 * `PORT`: The port number on which the application will run.
 * `NODE_ENV`: The environment in which the application will run.
 * `DB_URI`: The MongoDB connection string.
+* `JWT_SECRET`: The secret used for signing JWTs.
