@@ -10,6 +10,7 @@ SubDub is a comprehensive subscription management system designed to streamline 
 - **Payment Method Support**: Integrate multiple payment methods to provide flexibility to users.
 - **Upcoming Renewals View**: Stay informed with a dedicated view for upcoming subscription renewals.
 - **Subscription Cancellation**: Easily cancel subscriptions when needed.
+- **Email Notifications**: The application now supports sending email notifications using Nodemailer. This feature allows users to receive updates and alerts directly in their inbox.
 
 ### Security and Protection
 
@@ -35,3 +36,7 @@ The application uses environment variables for critical configuration settings. 
 - `DB_URI`: The MongoDB connection string.
 - `JWT_SECRET`: Secret key for signing JSON Web Tokens.
 - `ARCJET_KEY`: Key for integrating ArcJet services.
+- `SMTP_SERVER`: SMTP server address for sending emails.
+- `SMTP_PORT`: Port number for the SMTP server.
+- `EMAIL_USER`: Email address used as the sender.
+- `EMAIL_PASS`: Password for the sender email account.
