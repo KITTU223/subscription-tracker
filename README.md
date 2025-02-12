@@ -1,43 +1,68 @@
-
-## Project Overview
+# SubDub
 
 SubDub is a comprehensive subscription management system designed to streamline the process of managing subscription-based services. Built using Node.js, Express.js, and MongoDB, this application allows users to efficiently create, manage, and cancel subscriptions with ease. The system also offers insightful features such as viewing upcoming renewals and handling subscription cancellations.
 
-### Features
+## Features
 
 - **User Authentication and Authorization**: Securely manage user access with robust authentication and authorization mechanisms.
 - **Subscription Management**: Effortlessly create, update, and delete subscriptions. Customize subscriptions based on various parameters such as frequency and category.
-- **Payment Method Support**: Integrate multiple payment methods to provide flexibility to users.
 - **Upcoming Renewals View**: Stay informed with a dedicated view for upcoming subscription renewals.
 - **Subscription Cancellation**: Easily cancel subscriptions when needed.
-- **Email Notifications**: The application now supports sending email notifications using Nodemailer. This feature allows users to receive updates and alerts directly in their inbox.
+- **Email Notifications**: Supports sending email notifications using Nodemailer to keep users updated on their subscriptions.
 
-### Security and Protection
+## Security and Protection
 
-- **ArcJet Integration**: The application leverages ArcJet for advanced security measures, including bot protection and rate limiting. This integration helps safeguard the application from malicious traffic and ensures secure access.
+- **ArcJet Integration**: Leverages ArcJet for advanced security measures, including bot protection and rate limiting. This integration helps safeguard the application from malicious traffic and ensures secure access.
 
-### Technology Stack
+## Technology Stack
 
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB Atlas, utilizing Mongoose for ORM
 - **Security**: ArcJet, JWT for authentication
+- **Caching**: Upstash Workflow
 - **Email**: NodeMailer
 
-### Installation and Running the Application
+## Installation and Running the Application
 
-1. **Installation**: Clone the repository and run `npm install` to install all necessary dependencies.
-2. **Running**: Use the command `npm start` to run the application. It will start on the configured port, which defaults to 3000.
+### Prerequisites
 
-### Configuration
+- Node.js and npm installed on your system.
+- A MongoDB Atlas account for database hosting.
+- An Upstash Redis account for caching and workflow automation.
 
-The application uses environment variables for critical configuration settings. These include:
+### Installation
 
-- `PORT`: Defines the port on which the application will run.
-- `NODE_ENV`: Specifies the environment mode (e.g., development, production).
-- `DB_URI`: The MongoDB connection string.
-- `JWT_SECRET`: Secret key for signing JSON Web Tokens.
-- `ARCJET_KEY`: Key for integrating ArcJet services.
-- `SMTP_SERVER`: SMTP server address for sending emails.
-- `SMTP_PORT`: Port number for the SMTP server.
-- `EMAIL_USER`: Email address used as the sender.
-- `EMAIL_PASS`: Password for the sender email account.
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/KITTU223/subscription-tracker.git
+   cd subscription-tracker
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+
+### Running the Application
+
+To start the server, run:
+
+```sh
+npm start
+```
+
+By default, the application will run on port `3000` unless otherwise specified.
+
+## Configuration
+
+The application uses environment variables for critical configuration settings. Create a `.env` file in the root directory and add the following:
+
+```env
+PORT=3000
+NODE_ENV=development
+DB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+ARCJET_KEY=your_arcjet_key
+```
+
+---
+
