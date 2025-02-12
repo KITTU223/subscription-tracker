@@ -1,39 +1,37 @@
-# SubDub - A Subscription Management System
 
-SubDub is a Subscription Management System built using Node.js, Express.js, and MongoDB. The system allows users to create, manage, and cancel subscriptions. It also provides features for viewing upcoming renewals and canceling subscriptions.
+## Project Overview
 
-## Features
+SubDub is a comprehensive subscription management system designed to streamline the process of managing subscription-based services. Built using Node.js, Express.js, and MongoDB, this application allows users to efficiently create, manage, and cancel subscriptions with ease. The system also offers insightful features such as viewing upcoming renewals and handling subscription cancellations.
 
-* User authentication and authorization
-* Subscription creation, management, and cancellation
-* Support for different payment methods
-* Upcoming renewals view
-* Subscription cancellation
+### Features
 
-## Technology Stack
+- **User Authentication and Authorization**: Securely manage user access with robust authentication and authorization mechanisms.
+- **Subscription Management**: Effortlessly create, update, and delete subscriptions. Customize subscriptions based on various parameters such as frequency and category.
+- **Payment Method Support**: Integrate multiple payment methods to provide flexibility to users.
+- **Upcoming Renewals View**: Stay informed with a dedicated view for upcoming subscription renewals.
+- **Subscription Cancellation**: Easily cancel subscriptions when needed.
 
-* Node.js
-* Express.js
-* MongoDB
-* Mongoose
+### Security and Protection
 
-## Development
+- **ArcJet Integration**: The application leverages ArcJet for advanced security measures, including bot protection and rate limiting. This integration helps safeguard the application from malicious traffic and ensures secure access.
 
-The project is built using Node.js and Express.js. The database is MongoDB, and the ORM used is Mongoose.
+### Technology Stack
 
-## Installation
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB, utilizing Mongoose for ORM
+- **Security**: ArcJet, JWT for authentication
 
-To install the project, clone the repository and run `npm install`.
+### Installation and Running the Application
 
-## Running the Application
+1. **Installation**: Clone the repository and run `npm install` to install all necessary dependencies.
+2. **Running**: Use the command `npm start` to run the application. It will start on the configured port, which defaults to 3000.
 
-To run the application, use the command `npm start`. The application will start on port 3000.
+### Configuration
 
-## Configuration
+The application uses environment variables for critical configuration settings. These include:
 
-The application uses environment variables for configuration. The variables are:
-
-* `PORT`: The port number on which the application will run.
-* `NODE_ENV`: The environment in which the application will run.
-* `DB_URI`: The MongoDB connection string.
-* `JWT_SECRET`: The secret used for signing JWTs.
+- `PORT`: Defines the port on which the application will run.
+- `NODE_ENV`: Specifies the environment mode (e.g., development, production).
+- `DB_URI`: The MongoDB connection string.
+- `JWT_SECRET`: Secret key for signing JSON Web Tokens.
+- `ARCJET_KEY`: Key for integrating ArcJet services.
