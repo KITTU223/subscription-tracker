@@ -21,6 +21,7 @@ SubDub is a comprehensive subscription management system designed to streamline 
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB Atlas, utilizing Mongoose for ORM
 - **Security**: ArcJet, JWT for authentication
+- **Email**: NodeMailer
 
 ### Installation and Running the Application
 
