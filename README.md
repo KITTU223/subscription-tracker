@@ -57,8 +57,8 @@ By default, the application will run on port `3000` unless otherwise specified.
 The application uses environment variables for critical configuration settings. Create a `.env` file in the root directory and add the following:
 
 ```env
-PORT=3000
-NODE_ENV=development
+PORT=
+NODE_ENV=
 DB_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
 ARCJET_KEY=your_arcjet_key
